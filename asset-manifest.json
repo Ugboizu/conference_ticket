@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/conference_ticket/static/css/main.7b386bff.css",
+    "main.js": "/conference_ticket/static/js/main.d11a1b80.js",
+    "static/js/488.0171dc4c.chunk.js": "/conference_ticket/static/js/488.0171dc4c.chunk.js",
+    "static/media/Subtract.png": "/conference_ticket/static/media/Subtract.089c1a8fb9d491315f22.png",
+    "index.html": "/conference_ticket/index.html",
+    "main.7b386bff.css.map": "/conference_ticket/static/css/main.7b386bff.css.map",
+    "main.d11a1b80.js.map": "/conference_ticket/static/js/main.d11a1b80.js.map",
+    "488.0171dc4c.chunk.js.map": "/conference_ticket/static/js/488.0171dc4c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b386bff.css",
+    "static/js/main.d11a1b80.js"
+  ]
+}
