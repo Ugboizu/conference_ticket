@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+
+
+.container {
+	width: 60%;
+	margin: auto;
+}
+  
+.readyContainer {
+	background: transparent;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px 250px;
+	border: 1px solid rgba(14, 70, 79, 1);
+}
+
+.ready_heading {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid rgba(14, 70, 79, 1);
+}
+  
+.title {
+	font-family: 'JejuMyeongjo', serif;
+	font-size: 32px;
+	font-weight: 400;
+}
+  
+.stepIndicator {
+	font-family: 'Roboto', serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 40px;
+}
+
+.ticket_title {
+	font-family: 'Alatsi', serif;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.subtitle {
+	font-family: 'Roboto', serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.content {
+	background: url('../assets/images/Subtract.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-items: center;
+	padding: 60px;
+	margin: 70px;
+	
+} 
+
+.content_item {
+	border: 1px solid #24A0B5;
+	border-radius: 15px;
+	margin: 0 70px 90px 70px;
+}
+
+.download {
+	font-family: 'Roboto', serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.eventTitle {
+	font-family: "Road Rage", serif;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 34px;
+}
+
+.eventDetails {
+	font-family: 'Roboto', serif;
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.icon {
+	font-size: 10px;
+}
+  
+.profileImage {
+	margin: 1rem 0;
+}
+  
+.image {
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+}
+  
+.ticketInfo {
+	text-align: left;
+	background-color: #08343C;
+	padding: 1rem;
+	border-radius: 8px;
+	border: 1px solid #24A0B5;
+	margin:30px;
+}
+  
+.infoRow {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #24A0B5;
+	border-left: none;
+	border-right: none;
+}
+  
+.infoColumn {
+	flex: 1;
+	padding: 0.5rem;
+}
+  
+.label {
+	/* font-size: 0.8rem; */
+	color: #9abdc4;
+	font-family: 'Roboto', serif;
+	font-size: 10px;
+	font-weight: 400;
+}
+  
+.value {
+	font-family: 'Roboto', serif;
+	font-size: 10px;
+	font-weight: 400;
+}
+  
+.specialRequest {
+	margin-top: 1rem;
+}
+
+
+  
+.buttonGroup > *{
+	align-items: center;
+	margin: 20px 20px;
+	width: 44%;
+}
+  
+.backButton {
+	background: transparent;
+	border: 1px solid #24A0B5;
+	color: #24A0B5;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: 'JejuMyeongjo', serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.backButton:hover {
+	background-color: #24A0B5;
+	color: white;
+}
+
+.downloadButton {
+	background: #24A0B5;
+	border: none;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: 'JejuMyeongjo', serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+  
+@media (max-width: 768px) {
+
+	.readyContainer {
+		/* width: 100%; */
+		margin: auto;
+	}
+
+	.content {
+		margin: 0;
+		padding: 0;
+	}
+
+	.content_item {
+		margin: 50px 30px;
+		padding:  0;
+	}
+
+	.title {
+		font-size: 20px;
+	}
+
+	.stepIndicator {
+		font-size: 14px;
+		margin-top: 20px;
+	}
+
+	.ticketInfo {
+		margin: 15px;
+	}
+
+	.ticket_title {
+		font-size: 22px;
+	}
+
+	.image {
+		width: 80px;
+		height: 80px;
+	}
+
+	.buttonGroup {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .buttonGroup > * {
+        width: 90%;
+        margin: 10px ;
+    }
+
+    .backButton, .downloadButton {
+        width: 100%;
+        padding: 12px;
+    }
+}

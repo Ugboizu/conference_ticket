@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+
+
+.header {
+	background: radial-gradient(circle, rgba(36, 160, 181, 0.2) 0%, rgba(36, 160, 181, 0) 100%), rgba(2, 25, 29, 1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 30px;
+	border: 1px solid rgba(25, 118, 134, 1);
+	border-radius: 20px;
+	margin: 40px 140px;
+	font-family: 'JejuMyeongjo', serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+  
+.header .logo {
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffffff;
+}
+  
+.header nav a {
+	margin: 0 20px;
+	color: #e0e1dd;
+	text-decoration: none;
+}
+  
+.myticketsBtn {
+	background: white;
+	border: 1px solid #e0e1dd;
+	padding: 8px 12px;
+	color: black;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: 'JejuMyeongjo', serif;
+	font-weight: 400;
+}
+ 
+
+@media screen and (max-width: 768px) {
+	.header {
+	  /* flex-direction: column; */
+	  /* text-align: center; */
+	  margin: 20px 5px;
+	  gap: 20px;
+	}
+
+	.navbar {
+		display: none;
+	}
+  
+	.myticketsBtn {
+		font-size: 14px;
+	}
+}
+  

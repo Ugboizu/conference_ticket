@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+
+.container {
+	width: 60%;
+	margin: auto;
+}
+  
+.formContainer {
+	background: transparent;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px 250px;
+	border: 1px solid rgba(14, 70, 79, 1);
+}
+
+.attend_heading {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid rgba(14, 70, 79, 1);
+}
+  
+.title {
+	font-family: 'JejuMyeongjo', serif;
+	font-size: 32px;
+	font-weight: 400;
+}
+  
+.stepIndicator {
+	font-family: 'Roboto', serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 40px;
+}
+
+.card {
+	border: 1px solid rgba(14, 70, 79, 1);
+	border-radius: 10px;
+}
+  
+.uploadSection {
+	background: radial-gradient(circle, rgba(36, 160, 181, 0.2) 0%, rgba(36, 160, 181, 0) 100%), rgba(10, 12, 17, 0.1);
+	padding: 15px;
+	border-radius: 10px;
+	text-align: center;
+	border: 1px solid rgba(7, 55, 63, 1);
+	margin: 20px;
+}
+  
+.uploadLabel {
+	font-family: "Roboto", serif;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 16px;
+	text-align: left;
+}
+  
+.uploadBox {
+	/* width: 0%; */
+	height: 150px;
+	border: 2px solid rgb(4,27,32);
+	background-color: rgb(4,27,32);
+	/* border-radius: 8px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 40px 10px;
+}
+
+.uploadedImage {
+	width: 30%; 
+	height: 130%; 
+	object-fit: cover; 
+	border-radius: 15px; 
+	border: 3px solid rgb(14,70,79);
+}
+  
+
+.uploadLabell {
+	border: 3px solid rgb(14,70,79);
+	border-radius: 15px;
+	background-color: #2096A9;
+	margin: 80vh 40vh;
+	padding: 46px;
+	cursor: pointer;
+}
+
+.uploadBox input {
+	display: none;
+}
+  
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.label {
+	font-family: "Roboto", serif;
+	font-weight: 400;
+	font-style: normal;
+  	font-size: 16px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.inputWithIcon {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.input {
+	padding: 15px;
+	border: 1px solid  #07373F;
+	border-radius: 10px;
+	background-color: transparent;
+	color: white; 
+	margin: 20px;
+}
+
+.icon {
+	position: absolute;
+	left: 40px;
+	font-size: 1rem;
+	margin-right: 40px;
+}
+
+
+.inputWithIcon {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 100%; /* Ensure it stretches */
+}
+  
+.inputWithIcon .input {
+	flex: 1; 
+	padding-left: 40px;
+	width: 100%; 
+}
+  
+
+.textarea {
+	padding: 15px;
+	height: 20vh;
+	border: 1px solid  #07373F;
+	border-radius: 10px;
+	background-color: transparent;
+	color: white;
+	margin: 20px;
+}
+
+.textarea::placeholder {
+	font-family: "Roboto", serif;
+	font-weight: 400;
+	font-style: normal;
+  	font-size: 16px;
+	/* color: white; */
+}
+
+.buttonGroup > *{
+	align-items: center;
+	margin: 20px 20px;
+	width: 44%;
+}
+
+.backButton {
+	background: transparent;
+	border: 1px solid #24A0B5;
+	color: #24A0B5;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: 'JejuMyeongjo', serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.backButton:hover {
+	background-color: #24A0B5;
+	color: #07373F;
+}
+
+.submitButton {
+	background: #24A0B5;
+	border: none;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: 'JejuMyeongjo', serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.submitButton:hover {
+	color: #07373F;
+}
+
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+
+    .formContainer {
+        margin: 20px auto; 
+        padding: 15px;
+    }
+
+    .uploadSection {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .uploadBox {
+		border: none;
+		background-color: transparent;
+    }
+
+    .uploadLabell {
+        margin: 90px 30px;
+        padding: 40px 20px;
+    }
+
+    .input, .textarea {
+        width: 80%;
+        margin: 10px ;
+        padding: 12px;
+    }
+
+    .inputWithIcon .input {
+        margin-left: 30px;
+    }
+
+    .buttonGroup {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .buttonGroup > * {
+        width: 90%;
+        margin: 10px ;
+    }
+
+    .backButton, .submitButton {
+        width: 100%;
+        padding: 12px;
+    }
+
+	.title{
+		font-size: 20px;
+	}
+
+	.stepIndicator {
+		font-size: 14px;
+		margin-top: 20px;
+	}
+
+	.uploadedImage {
+		width: 100%;
+		height: 100%;
+	}
+}

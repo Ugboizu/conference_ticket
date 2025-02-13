@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+
+
+body {
+	background: radial-gradient(circle, rgba(36, 160, 181, 0.2) 0%, rgba(36, 160, 181, 0) 100%), rgba(2, 25, 29, 1);
+	color: #e0e1dd;
+	font-family: 'JejuMyeongjo', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+.container {
+	width: 60%;
+	margin: auto;
+}
+  
+.ticket_selection {
+	background: transparent;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px 250px;
+	border: 1px solid rgba(14, 70, 79, 1);
+}
+
+.ticket_heading {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid rgba(14, 70, 79, 1);
+}
+
+.ticket_heading h2 {
+	font-family: 'JejuMyeongjo', serif;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.ticket_heading p {
+	font-family: 'Roboto', serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 40px;
+}
+
+.card {
+	border: 1px solid rgba(14, 70, 79, 1);
+	border-radius: 10px;
+}
+  
+.event_card {
+	background: radial-gradient(circle, rgba(36, 160, 181, 0.2) 0%, rgba(36, 160, 181, 0) 100%), rgba(10, 12, 17, 0.1);
+	padding: 15px;
+	border-radius: 10px;
+	text-align: center;
+	border: 1px solid rgba(7, 55, 63, 1);
+	margin: 20px;
+	
+}
+
+.event_card h3 {
+	font-family: "Road Rage", serif;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 62px;
+	margin: 0;
+}
+
+.event_card p {
+	font-family: "Roboto", serif;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 16px;
+}
+
+.ticket_quantity h4 {
+	text-align: left;
+	margin: 20px;
+	font-family: "Roboto", serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.ticket_quantity select {
+	width: 95%;
+	margin: 0 20px;
+	padding: 20px;
+	border: 1px solid rgba(14, 70, 79, 1);
+	border-radius: 20px;
+	background: transparent;
+	color: white;
+}
+
+
+option {
+	background-color: #07373F;
+	color: white;
+	font-size: 16px;
+	padding: 10px;
+}
+  
+.ticket_options {
+	border-top: 2px solid rgba(14, 70, 79, 1);
+	justify-content: space-around;
+	margin-top: 20px;
+	font-family: "Roboto", serif;
+	font-weight: 400;
+}
+
+.ticket_options h4 {
+	font-family: "Roboto", serif;
+	font-weight: 400;
+	font-style: normal;
+  	font-size: 16px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.ticket_option_item {
+	border: 1px solid rgba(7, 55, 63, 1);
+	margin: 20px;
+	border-radius: 10px;
+}
+
+.ticket_option_item > * {
+	border: 1px solid rgba(7, 55, 63, 1);
+	border-radius: 10px;
+}
+  
+.ticket_options button {
+	background-color: transparent;
+	padding: 10px;
+	border: 3px solid rgb(25,118,134);
+	border-radius: 15px;
+	cursor: pointer;
+	color: white;
+	width: 180px;
+	height: 120px;
+	margin: 10px 22px;
+	text-align: left;
+}
+  
+.ticket_options button.active {
+	background: #778da9;
+}
+  
+.ticketselectbutton > *{
+	align-items: center;
+	margin: 20px 20px;
+	width: 44%;
+}
+
+.ticket_price {
+	font-family: "Roboto", serif;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.ticket_type {
+	font-family: "Roboto", serif;
+	font-weight: 400;
+	font-style: normal;
+  	font-size: 16px;
+}
+
+.ticket_left {
+	font-family: "Roboto", serif;
+	font-weight: 400;
+	font-style: normal;
+  	font-size: 14px;
+}
+  
+.cancel {
+	background: transparent;
+	border: 1px solid #24A0B5;
+	color: #24A0B5;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: 'JejuMyeongjo', serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+  
+.next {
+	background: #24A0B5;
+	border: none;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: 'JejuMyeongjo', serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+  
+@media screen and (max-width: 768px) {
+	.container {
+	  width: 95%;
+	  margin: auto;
+	}
+  
+	.ticket_selection {
+	  width: 90%;
+	  margin: auto;
+	  padding: 15px;
+	}
+  
+	.ticket_heading h2 {
+	  font-size: 24px;
+	}
+
+	.ticket_heading p{
+		margin: 20px;
+	}
+  
+	.event_card {
+	  margin: 10px;
+	  padding: 10px;
+	}
+  
+	.event_card h3 {
+	  font-size: 40px;
+	}
+  
+	.ticket_options button {
+	  width: 90%;
+	  height: auto;
+	  padding: 15px;
+	  text-align: center;
+	  font-size: 14px;
+	}
+  
+	.ticket_quantity select {
+	  width: 90%;
+	  padding: 10px;
+	}
+  
+	.ticketselectbutton {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 10px;
+	}
+  
+	.ticketselectbutton > * {
+	  width: 90%;
+	}
+  
+	.header {
+	  flex-direction: column;
+	  text-align: center;
+	  margin: 20px 10px;
+	}
+  
+	.myticketsBtn {
+	  width: 100%;
+	  text-align: center;
+	}
+  
+	.next, .cancel {
+	  width: 90%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.event_card h3 {
+	  font-size: 30px;
+	}
+  
+	.ticket_heading h2 {
+	  font-size: 20px;
+	}
+  
+	.ticket_price {
+	  font-size: 18px;
+	}
+  
+	.ticket_type {
+	  font-size: 14px;
+	}
+	
+}
+  
+  
