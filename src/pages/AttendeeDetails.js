@@ -13,14 +13,34 @@ const AttendeeDetails = () => {
 		email: "hello@avirolagos.io",
 		specialRequest: "",
 		avatar: "",
+    	ticketType: localStorage.getItem("ticketType") || "",
+    	ticketQuantity: localStorage.getItem("ticketQuantity") || ""
+		
 	});
+	
 	
 	const [errors, setErrors] = useState({});
 
 	useEffect(() => {
+		const savedTicketType = localStorage.getItem("ticketType");
+		const savedTicketQuantity = localStorage.getItem("ticketQuantity");
+	
+		setFormData((prevData) => ({
+		  ...prevData,
+		  ticketType: savedTicketType || "",
+		  ticketQuantity: savedTicketQuantity || ""
+		}));
+	}, []);
+	
+
+	useEffect(() => {
 		const savedData = localStorage.getItem("attendeeForm");
-		if (savedData) {
-		  setFormData(JSON.parse(savedData));
+		try {
+			if (savedData) {
+				setFormData(JSON.parse(savedData));
+			}
+		} catch (error) {
+			console.error("Error parsing attendeeForm from localStorage:", error);
 		}
 	}, []);
 	

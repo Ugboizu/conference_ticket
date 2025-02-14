@@ -10,16 +10,31 @@ const TicketReady = () => {
     email: "",
     avatar: "",
     specialRequest: "",
+    ticketType: "",
+    ticketQuantity: ""
   });
 
   useEffect(() => {
-    const savedData = JSON.parse(localStorage.getItem("attendeeForm"));
-    if (savedData) {
-      setTicketData(savedData);
-    } else {
-      navigate("/attendee-details"); 
-    }
+	const savedData = localStorage.getItem("attendeeForm");
+  
+	try {
+	  const parsedData = savedData ? JSON.parse(savedData) : null;
+  
+	  if (parsedData && typeof parsedData === "object") {
+		setTicketData(parsedData);
+	  } else {
+		navigate("/attendeedetails"); // Redirect if no valid data
+	  }
+	} catch (error) {
+	  console.error("Error parsing attendeeForm from localStorage:", error);
+	  localStorage.removeItem("attendeeForm"); // Remove corrupted data
+	  navigate("/attendeedetails");
+	}
   }, [navigate]);
+
+	const handleDownload = () => {
+    	alert("Download functionality coming soon!"); 
+    };
 
   return (
     <div className='container'>
@@ -34,7 +49,7 @@ const TicketReady = () => {
         <div>
           <h2 className={styles.ticket_title}>Your Ticket is Booked!</h2>
           <p className={styles.subtitle}>
-            Check your email for a copy or you can <span className={styles.download}>download</span>
+            Check your email for a copy or you can <span className={styles.download} onClick={handleDownload}>download</span>
           </p>
         </div>
 
@@ -56,22 +71,22 @@ const TicketReady = () => {
              		<div className={styles.infoRow}>
 						<div className={styles.infoColumn}>
 							<p className={styles.label}>Enter your name</p> 
-							<p className={styles.value}><strong>{ticketData.name}</strong></p>
+							<p className={styles.value}><strong>{ticketData.name || "N/A"}</strong></p>
 						</div>
 						<div className={styles.infoColumn}>
 							<p className={styles.label}>Enter your email *</p>
-							<p className={styles.value}><strong>{ticketData.email}</strong></p>
+							<p className={styles.value}><strong>{ticketData.email || "N/A"}</strong></p>
 						</div>
              		</div>
 
 					<div className={styles.infoRow}>
 						<div className={styles.infoColumn}>
 							<p className={styles.label}>Ticket Type:</p>
-							<p className={styles.value}>VIP</p>
+							<p className={styles.value}><strong>{ticketData.ticketType || "N/A"}</strong></p>
 						</div>
 						<div className={styles.infoColumn}>
 							<p className={styles.label}>Ticket for:</p>
-							<p className={styles.value}>1</p>
+							<p className={styles.value}><strong>{ticketData.ticketQuantity || "N/A"}</strong></p>
 						</div>
 					</div>
 
@@ -91,7 +106,7 @@ const TicketReady = () => {
           <button className={styles.backButton} onClick={() => navigate("/attendeedetails")}>
             Book Another Ticket
           </button>
-          <button className={styles.downloadButton}>Download Ticket</button>
+          <button className={styles.downloadButton} onClick={handleDownload}>Download Ticket</button>
         </div>
       </div>
     </div>
